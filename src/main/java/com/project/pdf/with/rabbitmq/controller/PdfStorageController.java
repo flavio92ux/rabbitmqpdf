@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 @RestController
-@RequestMapping(value = "pdf")
+@RequestMapping(value = "pdfStorage")
 public class PdfStorageController {
   private final PdfStorageService pdfStorageService;
 

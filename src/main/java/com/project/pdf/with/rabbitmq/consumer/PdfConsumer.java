@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 
 import com.project.pdf.with.rabbitmq.dto.MergeRequest;
 import com.project.pdf.with.rabbitmq.repository.PdfRepository;
+import com.project.pdf.with.rabbitmq.utils.PdfUtil;
+import com.project.pdf.with.rabbitmq.utils.StorageUtil;
 
 @Component
 public class PdfConsumer {
@@ -14,7 +16,20 @@ public class PdfConsumer {
 
   @RabbitListener(queues = "pdf-merge-queue")
   public void processPdfMerge(MergeRequest mergeRequest) {
-    // byte[] mergedPdf = PdfUtil.mergePdfs(request.getFiles());
+    
+    try {
+      byte[] mergedPdf = PdfUtil.mergePdfs(mergeRequest.getFiles());
+
+      String fileLink = StorageUtil.saveFile(mergeRequest.getName(), mergedPdf);
+
+      System.out.println(fileLink);
+      System.out.println("_______________");
+
+
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
   }
 
 }

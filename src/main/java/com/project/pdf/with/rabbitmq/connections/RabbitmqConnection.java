@@ -12,37 +12,37 @@ import jakarta.annotation.PostConstruct;
 
 @Component
 public class RabbitmqConnection {
-    private static final String EXCHANCE_NAME = "anq.direct";
-    private AmqpAdmin amqpAdmin;
+    // private static final String EXCHANCE_NAME = "anq.direct";
+    // private AmqpAdmin amqpAdmin;
 
-    public RabbitmqConnection(AmqpAdmin amqpAdmin) {
-        this.amqpAdmin = amqpAdmin;
-    }
+    // public RabbitmqConnection(AmqpAdmin amqpAdmin) {
+    //     this.amqpAdmin = amqpAdmin;
+    // }
 
-    private Queue queue(String nomeFila) {
-        return new Queue(nomeFila, true, false, false);
-    }
+    // private Queue queue(String nomeFila) {
+    //     return new Queue(nomeFila, true, false, false);
+    // }
 
-    private DirectExchange directExchange() {
-        return new DirectExchange(EXCHANCE_NAME);
-    }
+    // private DirectExchange directExchange() {
+    //     return new DirectExchange(EXCHANCE_NAME);
+    // }
 
-    private Binding biding(Queue queue, DirectExchange directExchange) {
-        return new Binding(queue.getName(), Binding.DestinationType.QUEUE, directExchange.getName(), queue.getName(), null);
-    }
+    // private Binding biding(Queue queue, DirectExchange directExchange) {
+    //     return new Binding(queue.getName(), Binding.DestinationType.QUEUE, directExchange.getName(), queue.getName(), null);
+    // }
 
-    @PostConstruct
-    private void add() {
-        Queue filaEstoque = this.queue("teste3");
+    // @PostConstruct
+    // private void add() {
+    //     Queue filaEstoque = this.queue("teste3");
 
-        DirectExchange troca = this.directExchange();
+    //     DirectExchange troca = this.directExchange();
 
-        Binding ligacao = this.biding(filaEstoque, troca);
+    //     Binding ligacao = this.biding(filaEstoque, troca);
 
-        this.amqpAdmin.declareQueue(filaEstoque);
+    //     this.amqpAdmin.declareQueue(filaEstoque);
 
-        this.amqpAdmin.declareExchange(troca);
+    //     this.amqpAdmin.declareExchange(troca);
 
-        this.amqpAdmin.declareBinding(ligacao);
-    }
+    //     this.amqpAdmin.declareBinding(ligacao);
+    // }
 }
