@@ -1,0 +1,8 @@
+com/project/pdf/with/rabbitmq/dto/EstoqueDto.class
+com/project/pdf/with/rabbitmq/connections/RabbitmqConnection.class
+com/project/pdf/with/rabbitmq/PdfWithRabbitmqApplication.class
+com/project/pdf/with/rabbitmq/consumer/EstoqueConsumer.class
+com/project/pdf/with/rabbitmq/services/RabbitmqService.class
+com/project/pdf/with/rabbitmq/constants/RabbitmqConstants.class
+com/project/pdf/with/rabbitmq/controller/EstoqueController.class
+com/project/pdf/with/rabbitmq/consumer/CustomErrorStrategy.class
