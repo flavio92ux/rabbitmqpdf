@@ -23,11 +23,11 @@ public class PdfConsumer {
     try {
       byte[] mergedPdf = PdfUtil.mergePdfs(mergeRequest.getFiles());
 
-      String fileLink = StorageUtil.saveFile(mergeRequest.getName(), mergedPdf);
+      String fileLink = StorageUtil.saveFile(mergeRequest.getName() + ".pdf", mergedPdf);
 
       MergedPdf mergedPdfRecord = new MergedPdf();
       mergedPdfRecord.setName(mergeRequest.getName());
-      mergedPdfRecord.setLink(fileLink);
+      mergedPdfRecord.setLink("http://localhost:3001" + fileLink);
       mergedPdfRecord.setCreatedAt(LocalDateTime.now());
 
       repository.save(mergedPdfRecord);

@@ -3,9 +3,11 @@
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/consumer/PdfConsumer.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/controller/FileController.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/controller/PdfController.java
+/home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/controller/PdfStorageController.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/dto/MergeRequest.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/entity/MergedPdf.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/producer/RabbitMqProducer.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/repository/PdfRepository.java
+/home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/services/PdfStorageService.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/utils/PdfUtil.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/utils/StorageUtil.java

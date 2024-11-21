@@ -30,7 +30,7 @@ public class FileController {
 
             // Retorna o arquivo
             return ResponseEntity.ok()
-                    .header("Content-Disposition", "attachment; filename=\"" + fileName + ".pdf" + "\"")
+                    .header("Content-Disposition", "attachment; filename=\"" + fileName + "\"")
                     .body(resource);
         } catch (Exception e) {
             return ResponseEntity.internalServerError().build();
