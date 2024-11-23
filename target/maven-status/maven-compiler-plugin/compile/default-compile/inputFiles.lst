@@ -1,5 +1,6 @@
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/PdfWithRabbitmqApplication.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/configuration/RabbitConfig.java
+/home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/configuration/WebConfig.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/consumer/PdfConsumer.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/controller/FileController.java
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/main/java/com/project/pdf/with/rabbitmq/controller/PdfController.java
