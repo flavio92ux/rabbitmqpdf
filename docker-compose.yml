@@ -1,4 +1,11 @@
 services:
+    mysql:
+        image: mysql:lts
+        restart: always
+        ports:
+            - 3307:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: admin
     rabbitmq:
         image: rabbitmq:4-management
         container_name: rabbitmq
@@ -7,7 +14,7 @@ services:
             - 5672:5672
             - 15672:15672
         volumes:
-            - ./data:/var/lib/rabbitmq/
+            - ../data:/var/lib/rabbitmq/
         environment:
             - RABBITMQ_DEFAULT_USER=admin
             - RABBITMQ_DEFAULT_PASS=admin
