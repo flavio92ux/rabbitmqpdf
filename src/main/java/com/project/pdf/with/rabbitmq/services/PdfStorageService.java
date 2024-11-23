@@ -2,6 +2,7 @@ package com.project.pdf.with.rabbitmq.services;
 
 import java.util.List;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.project.pdf.with.rabbitmq.entity.MergedPdf;
@@ -16,7 +17,7 @@ public class PdfStorageService {
   }
 
   public List<MergedPdf> findAll() {
-    return pdfRepository.findAll();
+    return pdfRepository.findAll(Sort.by(Sort.Direction.DESC, "id"));
   }
 
   public MergedPdf create(MergedPdf PdfDto) {
