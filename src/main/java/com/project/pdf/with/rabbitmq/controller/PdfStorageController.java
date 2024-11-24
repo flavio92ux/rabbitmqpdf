@@ -22,6 +22,6 @@ public class PdfStorageController {
   public List<MergedPdf> getAllPdfs() {
     List<MergedPdf> allPdfs = pdfStorageService.findAll();
 
-    return allPdfs; // Ajustar retorno para dto
+    return allPdfs;
   }
 }
