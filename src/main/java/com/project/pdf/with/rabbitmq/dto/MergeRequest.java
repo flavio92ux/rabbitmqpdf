@@ -11,14 +11,12 @@ import lombok.Setter;
 @Getter
 @Setter
 public class MergeRequest implements Serializable {
-  private String name; // Nome do arquivo
-  private List<byte[]> files; // Arquivos como byte[]
+  private String name;
+  private List<byte[]> files;
 
-  // Construtor para RabbitMQ (Jackson usa o default)
   public MergeRequest() {
   }
 
-  // Construtor para criar a partir de MultipartFile (usado no Controller)
   public MergeRequest(String name, List<MultipartFile> multipartFiles) {
     this.name = name;
     this.files = multipartFiles.stream()

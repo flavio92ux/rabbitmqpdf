@@ -1,1 +1,6 @@
+com/project/pdf/with/rabbitmq/entity/MergedPdfTest.class
+com/project/pdf/with/rabbitmq/dto/MergeRequestTest.class
+com/project/pdf/with/rabbitmq/controller/PdfStorageControllerTest.class
+com/project/pdf/with/rabbitmq/consumer/PdfConsumerTest.class
+com/project/pdf/with/rabbitmq/services/PdfStorageServiceTest.class
 com/project/pdf/with/rabbitmq/PdfWithRabbitmqApplicationTests.class

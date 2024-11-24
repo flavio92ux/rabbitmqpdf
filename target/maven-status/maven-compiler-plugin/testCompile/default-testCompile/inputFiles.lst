@@ -1,1 +1,6 @@
 /home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/test/java/com/project/pdf/with/rabbitmq/PdfWithRabbitmqApplicationTests.java
+/home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/test/java/com/project/pdf/with/rabbitmq/consumer/PdfConsumerTest.java
+/home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/test/java/com/project/pdf/with/rabbitmq/controller/PdfStorageControllerTest.java
+/home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/test/java/com/project/pdf/with/rabbitmq/dto/MergeRequestTest.java
+/home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/test/java/com/project/pdf/with/rabbitmq/entity/MergedPdfTest.java
+/home/flavio/Projetos/Hinova Project/pdf-with-rabbitmq/rabbitmq-pdf/src/test/java/com/project/pdf/with/rabbitmq/services/PdfStorageServiceTest.java

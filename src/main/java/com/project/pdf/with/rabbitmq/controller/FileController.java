@@ -15,12 +15,11 @@ import java.nio.file.Paths;
 @RequestMapping("/files")
 public class FileController {
 
-  private static final String UPLOAD_DIR = "uploads"; // Diretório onde os arquivos são salvos
+  private static final String UPLOAD_DIR = "uploads";
 
   @GetMapping("/{fileName}")
   public ResponseEntity<Resource> getFile(@PathVariable String fileName) {
     try {
-            // Caminho completo do arquivo
             Path filePath = Paths.get(UPLOAD_DIR).resolve(fileName).normalize();
             Resource resource = new UrlResource(filePath.toUri());
 
@@ -28,7 +27,6 @@ public class FileController {
                 return ResponseEntity.notFound().build();
             }
 
-            // Retorna o arquivo
             return ResponseEntity.ok()
                     .header("Content-Disposition", "attachment; filename=\"" + fileName + "\"")
                     .body(resource);
